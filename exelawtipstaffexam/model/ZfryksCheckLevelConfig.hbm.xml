@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+	<class name="com.boco.eoms.exelawtipstaffexam.model.ZfryksCheckLevelConfig" table="zfryks_check_level_config">
+		<jcs-cache usage="nonstrict-read-write" />
+		<id column="district_id" name="districtId" type="string">
+			<generator class="assigned" />
+		</id>
+		<property column="group_id" name="groupId" type="string" />
+		<property column="operate_user_id" name="operateUserId" type="string" />
+		<property column="operate_time" name="operateTime" type="timestamp" />
+	</class>
+</hibernate-mapping>

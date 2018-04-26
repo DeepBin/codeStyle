@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+    <class name="com.boco.eoms.exelawtipstaffexam.model.ZfryzgksCheckControl"  table="zfryks_check_control">
+    <jcs-cache usage="nonstrict-read-write"/>
+    <id column="ID" name="id" type="string">
+        <generator class="uuid.hex"/>
+    </id>
+    <property column="DEL_FLAG" length="5" name="delFlag" type="integer"/>
+    <property column="apply_id" length="0" name="applyId" type="string"/>
+    <property column="state" length="0" name="state" type="string"/>
+    <property column="district_id" length="0" name="districtId" type="string"/>
+    <property column="now_step" length="0" name="nowStep" type="string"/>
+    <property column="next_step" length="0" name="nextStep" type="integer"/>
+    <property column="step_flag" length="0" name="stepFlag" type="integer"/>
+    </class>
+</hibernate-mapping>

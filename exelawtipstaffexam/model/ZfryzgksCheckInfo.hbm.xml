@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+	<class name="com.boco.eoms.exelawtipstaffexam.model.ZfryzgksCheckInfo"
+		table="zfryks_check_info">
+		<jcs-cache usage="nonstrict-read-write" />
+		<id column="ID" name="id" type="string">
+			<generator class="uuid.hex" />
+		</id>
+		<property column="DEL_FLAG" length="5" name="delFlag" type="integer" />
+		<property column="apply_id" name="applyId" type="string" />
+		<property column="check_district" length="0" name="checkDistrict" type="string" />
+		<property column="check_result" name="checkResult" type="string" />
+		<property column="check_idea" name="checkIdea" type="string" />
+		<property column="remark" name="remark" type="string" />
+		<property column="check_dept" name="checkDept" type="string" />
+		<property column="check_time" name="checkTime" type="timestamp" />
+	</class>
+</hibernate-mapping>

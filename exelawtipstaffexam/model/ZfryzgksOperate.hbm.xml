@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-2.0.dtd">
+<hibernate-mapping>
+	<class name="com.boco.eoms.exelawtipstaffexam.model.ZfryzgksOperate"
+		table="zfryks_operate">
+		<jcs-cache usage="nonstrict-read-write" />
+		<id column="ID" name="id" type="string">
+			<generator class="uuid.hex" />
+		</id>
+		<property column="DEL_FLAG" length="5" name="delFlag" type="integer" />
+		<property column="apply_id" length="0" name="applyId" type="string" />
+		<property column="userid" length="0" name="userid" type="string" />
+		<property column="district_id" length="0" name="districtId" type="string" />
+		<property column="content" length="0" name="content" type="string" />
+		<property column="time" length="0" name="time" type="timestamp" />
+		<property column="remark" length="0" name="remark" type="string" />
+	</class>
+</hibernate-mapping>
